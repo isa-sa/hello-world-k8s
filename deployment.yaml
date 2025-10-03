@@ -16,4 +16,4 @@ spec:
       - name: hello-container
         image: tiangolo/uwsgi-nginx-flask:python3.9
         ports:
-        - containerPort: 8080
+        - containerPort: 80
