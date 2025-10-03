@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hello-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: hello
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: hello-container
-        image: <SEU_USUARIO_DOCKERHUB>/hello-world:latest
+        image: tiangolo/uwsgi-nginx-flask:python3.9
         ports:
-        - containerPort: 5000
+        - containerPort: 80
